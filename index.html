@@ -6,9 +6,57 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Penguin Fashion - Tailwind Css</title>
   <link rel="icon" href="./images/favicon.png" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        fontFamily: {
+          poppins: ['Poppins', 'sans-serif'],
+        },
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            floral: '#FFFBF0',
+          }
+        }
+      }
+    }
+  </script>
 </head>
 <body>
-  <h1>Hello World !</h1>
+  <!-- Header Section Start -->
+  <header id="penguin-head" class="font-poppins bg-floral pb-24 flex align-middle justify-center flex-col">
+    <div class="bg-dots">
+      <img class="w-28 mx-auto" src="./images/dots.png" alt="Dots">
+    </div>
+    <div class="container mx-auto">
+      <section class="navbar h-max flex align-middle justify-between">
+        <div class="logo w-2/4 py-2">
+          <img class="w-72" src="./images/logo.png" alt="Penguin Fashion Logo">
+        </div>
+        <div class="nav-item w-2/4">
+          <ul class="flex align-middle justify-end">
+            <li class="p-4"><a class="text-base font-medium" href="#">Home</a></li>
+            <li class="p-4"><a class="text-base font-medium" href="#">Product</a></li>
+            <li class="p-4"><a class="text-base font-medium" href="#">About Us</a></li>
+            <li class="p-4"><a class="text-base font-medium" href="#">Contact Us</a></li>
+          </ul>
+        </div>
+      </section>
+      <section class="banner">
+        <div class="banner-content">
+          <h1><span>Be the Penguins</span> of Winter</h1>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+          <a href="#">Buy Now</a>
+        </div>
+        <div class="banner-image">
+          <img src="./images/model.png" alt="Model Pic">
+        </div>
+      </section>
+    </div>
+  </header>
+  <!-- Header Section End -->
 </body>
 </html>
