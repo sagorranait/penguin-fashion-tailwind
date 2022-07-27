@@ -12,16 +12,19 @@
   <script>
     tailwind.config = {
       theme: {
-        fontFamily: {
-          poppins: ['Poppins', 'sans-serif'],
-        },
         extend: {
           colors: {
             clifford: '#da373d',
             floral: '#FFFBF0',
             martinique: '#363958',
             casablanca: '#FABE4C',
-          }
+          },
+          fontFamily: {
+            poppins: ['Poppins', 'sans-serif'],
+          },
+          boxShadow: {
+            'card': '0px 10px 30px rgba(0, 0, 0, 0.05)',
+          },
         }
       }
     }
@@ -29,7 +32,7 @@
 </head>
 <body>
   <!-- Header Section Start -->
-  <header id="penguin-head" class="font-poppins bg-floral pb-24 flex align-middle justify-center flex-col">
+  <header id="penguinHead" class="font-poppins bg-floral pb-24 flex align-middle justify-center flex-col">
     <div class="bg-dots">
       <img class="w-28 mx-auto" src="./images/dots.png" alt="Dots">
     </div>
@@ -47,11 +50,11 @@
           </ul>
         </div>
       </section>
-      <section class="banner flex align-middle justify-between pt-11">
-        <div class="banner-content w-3/4 pr-32 flex align-middle flex-col justify-center">
-          <h1 class="text-7xl text-martinique leading-snug font-extrabold pr-52"><span class="text-casablanca">Be the Penguins</span> of Winter</h1>
-          <p class="text-base w-2/4 mb-5">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-          <a href="#" class="w-40	bg-gradient-to-r from-[#A4BC46] to-[#85A019] rounded-lg py-3 px-8 text-base font-medium text-[#FFFFFF]"><i class="fa-solid fa-cart-shopping pr-1"></i> Buy Now</a>
+      <section class="banner flex items-center justify-between pt-11">
+        <div class="banner-content w-3/4 pr-32">
+          <h1 class="text-7xl text-martinique leading-snug font-extrabold pr-44 uppercase"><span class="text-casablanca">Be the Penguins</span> of Winter</h1>
+          <p class="text-base w-2/4 mb-7">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+          <a href="#" class="w-40	bg-gradient-to-r from-[#A4BC46] to-[#85A019] rounded-lg py-3 px-8 text-base font-medium text-[#FFFFFF] uppercase"><i class="fa-solid fa-cart-shopping pr-1"></i> Buy Now</a>
         </div>
         <div class="banner-image w-2/4">
           <img src="./images/model.png" alt="Model Pic">
@@ -60,5 +63,49 @@
     </div>
   </header>
   <!-- Header Section End -->
+  <!-- Main Section Start -->
+  <main id="penguinMain" class="font-poppins">
+    <!-- Woman Jacket Start -->
+    <section class="woman-jacket container mx-auto py-20">
+      <h2 class="penguin-title text-2xl text-martinique uppercase font-semibold	pb-5">Woman Jacket</h2>
+      <div class="jackets grid grid-cols-3 gap-8">
+        <div class="jacket bg-white shadow-card p-5 rounded-2xl">
+          <div class="jacket-image p-5 bg-gray-100 rounded-2xl">
+            <img class="w-full" src="./images/jacket-1.png" alt="jacket-1">
+          </div>
+          <h3 class="text-martinique text-2xl font-bold py-4">Yellow Coat Jacket</h3>
+          <p class="text-base">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+          <div class="jacket-price flex items-center justify-between pt-3">
+            <h2 class="text-casablanca text-4xl	font-black">$234</h2>
+            <a href="#" class="bg-gradient-to-r from-[#A4BC46] to-[#85A019] rounded-lg py-3 px-6 text-base font-medium text-[#FFFFFF] uppercase"><i class="fa-solid fa-cart-shopping pr-1"></i> Buy Now</a>
+          </div>
+        </div>
+        <div class="jacket bg-white shadow-card p-5 rounded-2xl">
+          <div class="jacket-image p-5 bg-gray-100 rounded-2xl">
+            <img class="w-full" src="./images/jacket-2.png" alt="jacket-1">
+          </div>
+          <h3 class="text-martinique text-2xl font-bold py-4">Ladies Jacket</h3>
+          <p class="text-base">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+          <div class="jacket-price flex items-center justify-between pt-3">
+            <h2 class="text-casablanca text-4xl	font-black">$250</h2>
+            <a href="#" class="bg-gradient-to-r from-[#A4BC46] to-[#85A019] rounded-lg py-3 px-6 text-base font-medium text-[#FFFFFF] uppercase"><i class="fa-solid fa-cart-shopping pr-1"></i> Buy Now</a>
+          </div>
+        </div>
+        <div class="jacket bg-white shadow-card p-5 rounded-2xl">
+          <div class="jacket-image p-5 bg-gray-100 rounded-2xl">
+            <img class="w-full" src="./images/jacket-3.png" alt="jacket-1">
+          </div>
+          <h3 class="text-martinique text-2xl font-bold py-4">Woman Leather Jacket</h3>
+          <p class="text-base">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+          <div class="jacket-price flex items-center justify-between pt-3">
+            <h2 class="text-casablanca text-4xl	font-black">$220</h2>
+            <a href="#" class="bg-gradient-to-r from-[#A4BC46] to-[#85A019] rounded-lg py-3 px-6 text-base font-medium text-[#FFFFFF] uppercase"><i class="fa-solid fa-cart-shopping pr-1"></i> Buy Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Woman Jacket End -->
+  </main>
+  <!-- Main Section End -->
 </body>
 </html>
